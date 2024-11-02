@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.foksif</groupId>
-    <artifactId>fishworlds</artifactId>
+    <artifactId>shownick</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>fishworlds</name>
+    <name>shownick</name>
 
     <properties>
         <java.version>21</java.version>
