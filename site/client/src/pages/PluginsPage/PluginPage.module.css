@@ -1,0 +1,14 @@
+.pluginPage__container {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-bottom: 80px;
+}

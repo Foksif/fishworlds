@@ -1,0 +1,142 @@
+.advantage__container {
+	max-width: 1680px;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	flex-direction: column;
+	padding-top: 60px;
+}
+
+.advantage__title {
+	margin-bottom: 70px;
+
+	text-align: center;
+	font-weight: 800;
+	font-size: 40px;
+	color: #fff;
+}
+
+.advantage__card {
+	padding: 25px 20px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: -8px 7px 24px 0 rgba(143, 143, 143, 0.1),
+		-33px 28px 43px 0 rgba(143, 143, 143, 0.09),
+		-74px 64px 59px 0 rgba(143, 143, 143, 0.05),
+		-131px 114px 69px 0 rgba(143, 143, 143, 0.01),
+		-205px 178px 76px 0 rgba(143, 143, 143, 0);
+
+	background: linear-gradient(135deg, #f0f0f0 0%, #a8c5ff 100%);
+
+	transition: box-shadow 1s ease;
+}
+
+.advantage__card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: inherit;
+	background: linear-gradient(135deg, #d0e3ff 0%, #4d88ff 100%);
+	opacity: 0;
+	transition: opacity 0.3s;
+	z-index: 0;
+}
+
+.advantage__card:hover::before {
+	opacity: 1;
+}
+
+.advantage__card * {
+	position: relative;
+	z-index: 1;
+}
+
+.advantage__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 340px);
+	grid-template-rows: repeat(2, 280px);
+	grid-template-areas:
+		'one two two'
+		'one three three';
+	grid-gap: 20px;
+
+	align-self: center;
+}
+
+.advantage__card-admins {
+	color: #fff;
+	grid-area: one;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.advantage__card-comm {
+	grid-area: two;
+}
+
+.advantage__card-tps {
+	grid-area: three;
+}
+
+.advantage__card-img {
+	margin-bottom: 23px;
+}
+
+.advantage__card-title {
+	position: relative;
+	font-weight: 700;
+	font-size: 20px;
+	color: #000;
+}
+
+.advantage__card-line {
+	margin-top: 24px;
+	margin-bottom: 24px;
+
+	width: 120px;
+	height: 2px;
+
+	background: #000;
+}
+
+.advantage__card-desc {
+	font-weight: 500;
+	font-size: 16px;
+	color: #000;
+}
+
+@media (max-width: 1100px) {
+	.advantage__cards {
+		display: flex;
+		flex-direction: column;
+
+		max-width: 60%;
+
+		text-align: center;
+	}
+
+	.advantage__card-line {
+		margin-top: 24px;
+		margin-bottom: 24px;
+
+		width: 100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 1100px) {
+	.advantage__cards {
+		display: flex;
+		flex-direction: column;
+
+		max-width: 80%;
+
+		text-align: center;
+	}
+}
