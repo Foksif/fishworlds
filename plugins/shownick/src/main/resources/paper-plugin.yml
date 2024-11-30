@@ -1,0 +1,5 @@
+name: shownick
+version: '1.0'
+author: 'Foksif'
+main: org.foksif.shownick.Shownick
+api-version: '1.21'
