@@ -1,0 +1,45 @@
+.post {
+	display: flex;
+	flex-direction: column;
+}
+
+.post__title {
+	margin-bottom: 10px;
+
+	font-size: 38px;
+	font-weight: 700;
+
+	color: #37f;
+}
+
+.post__desc {
+	margin-bottom: 10px;
+
+	line-height: 30px;
+	font-size: 21px;
+	text-align: left;
+	overflow-wrap: break-word;
+}
+
+.post__desc::first-letter {
+	margin-left: 40px;
+}
+
+.post__list {
+	margin-bottom: 30px;
+}
+
+.post__list-row {
+	margin-left: 0px;
+
+	font-size: 21px;
+
+	list-style-type: circle;
+	line-height: 32px;
+}
+
+.post__image {
+	object-fit: cover;
+	height: 450px;
+	border-radius: 40px;
+}

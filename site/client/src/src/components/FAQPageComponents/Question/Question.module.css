@@ -1,0 +1,96 @@
+.rule__container {
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 20px 30px;
+	background-color: #131313;
+	border-radius: 20px;
+	text-align: center;
+	box-shadow: 0px 0px 20px 15px rgba(0, 33, 55, 0.3);
+	position: relative;
+	overflow: hidden;
+}
+
+.rule__container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../../../../public/images/FAQimg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transform: scaleX(1); /* Исходное положение фона */
+	border-radius: inherit;
+	z-index: 0;
+}
+
+.rule__container:nth-child(even)::before {
+	transform: scaleX(-1); /* Переворачивает только изображение */
+}
+
+.rule__container::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный чёрный слой */
+	border-radius: inherit;
+	z-index: 1; /* Располагается поверх фона */
+}
+
+.rule__container > * {
+	position: relative;
+	z-index: 2; /* Поднимает содержимое над фоном и затемнением */
+}
+
+.rule__title {
+	font-size: 36px;
+	cursor: pointer;
+
+	overflow-wrap: break-word;
+}
+
+.scroll-lock {
+	overflow-y: hidden;
+	position: relative;
+}
+
+.rule__desc {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+
+	overflow-wrap: break-word;
+
+	transform: translateY(-20px);
+	font-size: 24px;
+	transition: margin-top 0.4s ease-in-out, max-height 0.4s ease-in-out,
+		opacity 0.4s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.open {
+	margin-top: 20px;
+	opacity: 1;
+	max-height: 500px;
+	transform: translateY(0);
+}
+
+@media (max-width: 970px) {
+	.rule__container {
+		padding: 15px 20px;
+		margin: auto;
+	}
+
+	.rule__title {
+		font-size: 28px;
+	}
+
+	.rule__desc {
+		font-size: 20px;
+	}
+}

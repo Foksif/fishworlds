@@ -1,0 +1,132 @@
+.blue-inner-text {
+	color: #4d88ff;
+}
+
+.prohodka__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-top: 100px;
+	padding-bottom: 80px;
+	padding-top: 50px;
+
+	background-image: linear-gradient(
+			to bottom,
+			rgba(8, 8, 8, 1),
+			rgba(8, 8, 8, 0) 20%
+		),
+		linear-gradient(to top, rgba(8, 8, 8, 1), rgba(8, 8, 8, 0) 20%),
+		linear-gradient(to left, rgba(8, 8, 8, 1), rgba(8, 8, 8, 0) 50%),
+		linear-gradient(to right, rgba(8, 8, 8, 1), rgba(8, 8, 8, 0) 50%),
+		url(../../../../public/images/FAQimg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	text-shadow: 1px 1px 1px #111;
+}
+
+.prohodka__title {
+	text-align: center;
+	font-weight: 800;
+	font-size: 40px;
+	color: #fff;
+}
+
+.prohodka__player-data {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	align-items: center;
+}
+
+.prohodka__input {
+	padding-left: 25px;
+
+	background-color: rgba(8, 8, 8, 0.5);
+
+	border: none;
+	border-radius: 20px;
+	width: 850px;
+	height: 59px;
+
+	font-weight: 500;
+	font-size: 24px;
+	color: #fff;
+}
+
+.pay-btn {
+	border-radius: 20px;
+	border: 0;
+
+	margin-top: 60px;
+	align-self: center;
+
+	width: 368px;
+	height: 70px;
+
+	background-color: inherit;
+	border: 4px solid #4d88ff;
+
+	font-weight: 700;
+	font-size: 36px;
+	color: #fff;
+}
+
+.error-message {
+	margin-top: 16px;
+
+	color: #b21900;
+	font-size: 24px;
+}
+
+.prohodka_buy-btn {
+	transition: transform 0.3s;
+}
+
+.prohodka_buy-btn:hover {
+	transform: scale(1.05);
+}
+
+.prohodka__price {
+	font-weight: 800;
+	font-size: 36px;
+	color: #fff;
+
+	margin-bottom: 30px;
+}
+
+.price {
+	font-weight: 800;
+	font-size: 40px;
+	color: #4d88ff;
+}
+
+.oldprice {
+	font-weight: 800;
+	font-size: 24px;
+	color: #656a75;
+	text-decoration: line-through;
+}
+
+@media (max-width: 880px) {
+	.prohodka__input {
+		max-width: 80%;
+	}
+
+	.prohodka__container {
+		padding-top: 60px;
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 560px) {
+	.prohodka__container {
+		text-align: center;
+	}
+}

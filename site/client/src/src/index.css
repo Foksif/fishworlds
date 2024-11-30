@@ -1,0 +1,111 @@
+/* Основной холст */
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #080808;
+	color: #fff;
+}
+
+/* правый SCROLL */
+::-webkit-scrollbar {
+	width: 3px;
+	height: 3px;
+}
+
+::-webkit-scrollbar-track {
+	background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #080808;
+	border-radius: 6px;
+	border: 3px solid #37f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #37f;
+}
+
+/* scroll для Firefox */
+body {
+	scrollbar-color: #37f #37f;
+	scrollbar-width: thin;
+}
+
+/* Прокрутки */
+html,
+body {
+	overflow-x: hidden;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+/* Красота */
+button {
+	cursor: pointer;
+}
+
+/* Обнуления */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+/* Убрать стрелку у input number */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Исчезающий placeholder у input */
+input::-webkit-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+input::-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+input:-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+input:-ms-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+input:focus::-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+input:focus:-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+input:focus:-ms-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}

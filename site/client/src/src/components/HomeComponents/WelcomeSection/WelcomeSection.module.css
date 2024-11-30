@@ -1,0 +1,177 @@
+.welcome__container {
+	max-width: 1680px;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-top: 120px;
+	padding-bottom: 130px;
+	padding-left: 90px;
+
+	display: flex;
+	align-items: center;
+}
+
+.welcome-img {
+	margin-right: 120px;
+	max-width: 100%;
+	height: auto;
+	resize: none;
+}
+
+.welcome-img-blur {
+	position: absolute;
+	margin-left: 2%;
+	width: 90px;
+	height: 90px;
+
+	filter: blur(200px);
+	box-shadow: 0 0 8px 0 #37f, 0 0 17px 0 #37f, 0 0 59px 0 #37f, 0 0 118px 0 #37f,
+		0 0 202px 0 #37f, 0 0 353px 0 #37f;
+	background: #37f;
+	transform: rotate(-90deg);
+
+	z-index: -1;
+}
+
+.welcome__text {
+	max-width: 900px;
+}
+
+.welcome__text-title {
+	position: relative;
+
+	margin-bottom: 40px;
+
+	font-weight: 800;
+	font-size: 58px;
+	color: #fff;
+}
+
+.welcome__text-title::before {
+	content: '';
+	position: absolute;
+	border-radius: 5px;
+	top: 18px;
+	left: -20px;
+	width: 10px;
+	height: 33px;
+	background: #05f;
+}
+
+.welcome__text-desc {
+	margin-bottom: 40px;
+
+	font-weight: 500;
+	font-size: 24px;
+	color: #fff;
+}
+
+.welcome_text-btns {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	text-align: center;
+}
+
+.scrollToSub-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+
+	border: none;
+	border-radius: 5px;
+	width: 291px;
+	height: 44px;
+
+	font-weight: 700;
+	font-size: 20px;
+
+	color: #000;
+	background-color: #fff;
+
+	transition: 0.3s all;
+}
+
+.scrollToSub-btn:hover {
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+
+	transition: 0.3s all;
+}
+
+.scrollToSub-btn-img {
+	transition: 0.3s all;
+}
+
+.scrollToSub-btn:hover .scrollToSub-btn-img {
+	filter: brightness(0) invert(1);
+}
+
+.scrollToSub-btn-text:hover {
+	background-color: inherit;
+	color: #fff;
+}
+
+.welcome_ip-btn {
+	border: 2px solid #37f;
+	border-radius: 5px;
+	padding: 11px 20px;
+	width: 230px;
+	height: 46px;
+
+	background-color: inherit;
+
+	font-weight: 700;
+	font-size: 20px;
+	color: #fff;
+
+	transition: 0.3s all;
+}
+
+.welcome_ip-btn:hover {
+	background-color: #37f;
+}
+
+@media (max-width: 960px) {
+	.welcome_text-btns {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.welcome__container {
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 700px) {
+	.welcome-img {
+		margin-right: 20px;
+	}
+
+	.welcome__container {
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.welcome__container {
+		flex-direction: column;
+	}
+
+	.welcome__text {
+		text-align: center;
+	}
+
+	.welcome_text-btns {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.welcome__text-title::before {
+		content: none;
+	}
+}
