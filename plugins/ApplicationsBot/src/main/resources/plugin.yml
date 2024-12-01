@@ -1,0 +1,5 @@
+name: ApplicationsBot
+version: '${project.version}'
+main: me.foksik.applicationsBot.ApplicationsBot
+api-version: '1.21'
+author: 'foksik'

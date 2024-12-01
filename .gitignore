@@ -14,10 +14,13 @@ logs/
 # Фронтенд
 /client/node_modules/
 
-
 # SoulSpell
 /plugins/SoulSpell/target/
 /plugins/SoulSpell/.idea/
+
+# ApplicationsBot
+/plugins/ApplicationsBot/target/
+/plugins/ApplicationsBot/.idea/
 
 # IDE и редакторы
 .idea/
