@@ -13,13 +13,6 @@ logs/
 
 # Фронтенд
 /client/node_modules/
-client/build/
-client/dist/
-
-# Бэкенд
-/node_modules/
-dist/
-build/
 
 # IDE и редакторы
 .idea/
