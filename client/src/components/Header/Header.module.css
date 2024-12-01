@@ -1,0 +1,111 @@
+.header__container {
+	max-width: 1680px;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.header__nav {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav__menu {
+	display: flex;
+	gap: 74px;
+}
+
+.nav__menu-links {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.nav__menu-link {
+	position: relative;
+	font-weight: 700;
+	font-size: 24px;
+	color: #fff;
+	background-color: inherit;
+	border: none;
+}
+
+.nav__menu-link::after {
+	content: '';
+	bottom: 0;
+	position: absolute;
+	left: 50%;
+	bottom: -12px;
+	width: 0;
+	height: 2px;
+	background-color: #fff;
+	border-radius: 1px;
+	transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav__menu-link:hover::after {
+	width: 60%;
+	left: 20%;
+}
+
+.activeLink.nav__menu-link::after {
+	width: 60%;
+	left: 20%;
+}
+
+.social__links {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.social__link {
+	align-content: center;
+	opacity: 0.5;
+}
+
+.YT:hover {
+	filter: brightness(0) saturate(100%) invert(33%) sepia(89%) saturate(5831%)
+		hue-rotate(349deg) brightness(101%) contrast(102%);
+}
+.TG:hover {
+	filter: brightness(0) saturate(100%) invert(49%) sepia(10%) saturate(7490%)
+		hue-rotate(162deg) brightness(96%) contrast(104%);
+}
+.DIS:hover {
+	filter: brightness(0) saturate(100%) invert(31%) sepia(83%) saturate(7469%)
+		hue-rotate(214deg) brightness(96%) contrast(104%);
+}
+
+@media (max-width: 700px) {
+	.header__nav {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.nav__menu-link::after {
+		bottom: -5px;
+	}
+
+	.nav__menu-link {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 450px) {
+	.nav__menu-links {
+		gap: 20px;
+		flex-direction: column;
+		letter-spacing: 1px;
+	}
+
+	.nav__menu-link {
+		font-size: 20px;
+	}
+}
